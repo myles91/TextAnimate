@@ -29,6 +29,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
     "webpack": "^1.13.1",
     "webpack-stream": "^3.2.0"
   },
@@ -37,5 +38,7 @@
       "es2015",
       "react"
     ]
+  },
+  "dependencies": {
   }
 }

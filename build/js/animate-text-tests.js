@@ -113,7 +113,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	function insertIntoDOM() {
 		var element = arguments.length <= 0 || arguments[0] === undefined ? createElement() : arguments[0];
-		var target = arguments.length <= 1 || arguments[1] === undefined ? document.body : arguments[1];
+		var target = arguments.length <= 1 || arguments[1] === undefined ? document.getElementById("entry") : arguments[1];
 
 		target.appendChild(element);
 	}

@@ -2,19 +2,37 @@
 <html>
 	<head>
 		<title>Text Animate</title>
-		<style type="text/css">
-			.text-animator {
-				font-size: 20px;
-				font-weight: bold;
-				font-family: Arial;
-			}
-		</style>
 	</head>
 	<body>
-		<div id="entry"></div>
+
 		<script type="text/javascript" src="js/animate-text.js"></script>
+		<link href="css/textanimate.css" rel="stylesheet" type="text/css">
+
+		<div class="container ">
+			<div class="half">
+			<h1>TextAnimate</h1>
+				<div class="buttons">
+					<input id="wave" type="button" value="wave" />
+					<input id="bounce" type="button" value="bounce" />
+					<input id="fade" type="button" value="fade" />
+				</div>
+				<div id="entry"></div>
+			</div>
+		</div>
+
 		<script type="text/javascript">
-			console.log(AnimateText('AO Let\'s Go!').split().intoDOM());
+			document.getElementById("wave").onclick = function wave(){
+				AnimateText("wave").split().intoDOM('p', 'wave');
+			}
+
+			document.getElementById("bounce").onclick = function bounce(){
+				AnimateText("bounce").split().intoDOM('p', 'bounce');
+			}
+			
+			document.getElementById("fade").onclick = function fade(){
+				AnimateText("fade").split().intoDOM('p', 'fade');
+			}
 		</script>
+
 	</body>
 </html>

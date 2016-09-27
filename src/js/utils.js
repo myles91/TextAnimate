@@ -2,7 +2,7 @@ export function splitText(text) {
 	return text.split('');
 }
 
-export function insertIntoDOM(element = createElement(), target = document.body) {
+export function insertIntoDOM(element = createElement(), target = document.getElementById("entry")) {
 	target.appendChild(element);
 }
 
